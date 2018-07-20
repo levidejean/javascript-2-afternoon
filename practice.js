@@ -16,11 +16,11 @@
 */
 
 //Code here
-
-var me = {
+let me = {
   name: "Levi",
-  age: 28,
+  age: 28
 }
+
 console.log(me.name);
 ////////// PROBLEM 2 //////////
 
@@ -31,14 +31,13 @@ console.log(me.name);
 */
 
 //Code here
-
-var favoriteThings = {
-  band: "Led Zeplin",
-  food: "pho",
-  person: "myself",
-  book: "hunger games",
-  movie: "the wolf of wallstreet",
-  holiday: "christmas"
+let favoriteThings = {
+  band: 'Not Nickleback',
+  food: 'pho',
+  person: 'Kelsey',
+  book: 'your diary',
+  movie: 'The Wolf of Wall Street',
+  holiday: 'Christmas'
 }
 
 /*
@@ -48,8 +47,8 @@ var favoriteThings = {
 */
 
 //Code here
-favoriteThings.car = "Lambo";
-favoriteThings.brand = "Ford";
+favoriteThings.car = "Blanche";
+favoriteThings.brand = 'Nike';
 
 
 /*
@@ -59,9 +58,8 @@ favoriteThings.brand = "Ford";
 */
 
 //Code here
-
 favoriteThings.food = "Chicken Nuggets";
-favoriteThings.book= "Harry Potter";
+favoriteThings.book = "Harry Potter";
 
 ////////// PROBLEM 3 //////////
 
@@ -76,9 +74,9 @@ favoriteThings.book= "Harry Potter";
 */
 
 //Code here
-
-var backPack = {};
-var item = "firstPocket" 
+let backPack = {};
+item = 'firstPocket';
+backPack[item] = 'chapstick';
 
 /*
   After you do the above, alert your entire backPack object.
@@ -86,7 +84,7 @@ var item = "firstPocket"
 
 //Code here
 
-backPack[item] = "chapstick";
+console.log(backPack);
 
 /*
 You probably noticed that it just alerted [object Object].
@@ -96,7 +94,7 @@ Instead, console.log your whole backPack object and then check out the
 */
 
 //Code here
-
+console.log({ backPack });
 
 
 ////////// PROBLEM 4 //////////
@@ -133,7 +131,7 @@ user2.email = 'tyler.mcginnis@devmounta.in';
 
 //Code Here
 
-var methodCollection = {};
+let methodCollection = {};
 
 /*
   Now add two methods (functions that are properties on objects) to 
@@ -144,19 +142,20 @@ var methodCollection = {};
 
 //Code Here
 
-methodCollection.alertHello = function(){
+methodCollection.alertHello = function () {
   alert("hello");
-};
-methodCollection.logHello = function(){
+}
+methodCollection.logHello = function () {
   console.log("hello");
-};
+}
 /*
   Now call your alertHello and logHello methods.
 */
 
 //Code Here
 
-
+console.log(methodCollection.alertHello);
+console.log(methodCollection.logHello);
 
 ////////// PROBLEM 6 //////////
 
@@ -168,15 +167,14 @@ methodCollection.logHello = function(){
 
 //Code Here
 
-function makePerson(nameParam, birthdayParam, ssnParam){
+function makePerson(nameParam, birthdayParam, ssnParam) {
   return {
     name: nameParam,
     birthday: birthdayParam,
     ssn: ssnParam
   }
 }
-var newPerson = makePerson("Levi", "Aug 13", 123456789)
-
+console.log(makePerson("Levi", "August", "I'll never tell"))
 ////////// PROBLEM 7 //////////
 
 /*
@@ -188,10 +186,11 @@ var newPerson = makePerson("Levi", "Aug 13", 123456789)
 
 //Code Here
 
-function makeCard (cardNumber, expirationDate, securityCode){
-  return{
-  number: cardNumber,
-  experation: expirationDate,
-  code: securityCode
-  }
-};
+function makeCard(cardNumber, expirationDate, securityCode) {
+  return {
+
+    number: cardNumber,
+    expiration: expirationDate,
+    security: securityCode
+  };
+}
